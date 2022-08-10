@@ -1,0 +1,93 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* nav css */
+.header{
+    height: 80px;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #146eb4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header nav{
+    width: fit-content;
+}
+
+.header a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+.header .home-btn,.login-btn{
+    color: white;
+}
+.header .home-btn:hover,.login-btn:hover{
+    color: #d7d7d8;
+}
+
+.register-btn{
+    background-color: white;
+    color: #146eb4;
+    border-radius: 4px;
+}
+.register-btn:hover{
+    background-color: #d7d7d8;
+}
+
+
+
+/* login css */
+.login-form{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 50%;
+    padding: 15px 20px;
+    background-color: #c4dff6;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-form h3{
+    width: fit-content;
+    margin: 0 auto;
+}
+.login-form div{
+    margin: 0 auto;
+    width: 50%;
+}
+.login-form label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.login-form input{
+    height: 30px;
+    font-size: 18px;
+    padding: 0 10px;
+    outline-color: #146eb4;
+    letter-spacing: 1px;
+}
+.login-form .lgn-btn{
+    width: 30%;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #146eb4;
+    color: white;
+    border: none;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    transition: all 300ms;
+}
+.login-form .lgn-btn:hover{
+    transform: scale(0.9);
+}
