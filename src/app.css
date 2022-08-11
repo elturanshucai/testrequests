@@ -41,6 +41,14 @@
 .register-btn:hover{
     background-color: #d7d7d8;
 }
+.log-out-btn{
+    background-color: white;
+    color: #146eb4;
+    border-radius: 4px;
+}
+.log-out-btn:hover{
+    background-color: #d7d7d8;
+}
 
 
 
@@ -90,4 +98,44 @@
 }
 .login-form .lgn-btn:hover{
     transform: scale(0.9);
+}
+
+/* profile css */
+.profile{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #b9cfed;
+    border-radius: 3px;
+    padding: 10px 20px;
+    color: #123962;
+}
+.profile h1, h3, p{
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.profile .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.profile .skil{
+    display: flex;
+    font-weight: 500;
+}
+.profile .skil div{
+    width: 100%;
+}
+.profile .skil .level{
+    letter-spacing: 10px;
+}
+.profile footer{
+    margin-top: 50px;
+}
+.profile footer a{
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
 }
