@@ -1,11 +1,23 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 export default function Profile() {
-    const [user, setUser] = useState(null)
-    useEffect(() => {
-        axios.get('user').then(res => setUser(res.data))
-    })
+    const [user, setUser] = useState(null);
+
+    const getData = useCallback(async () => {
+        try {
+            const res = await axios.get('user');
+            setUser(res.data);   
+        } catch (err) {
+            console.log(err);
+        }
+    }, []);
+
+    useEffect(() => getData, [getData]);
+
+    // useEffect(() => {
+    //     axios.get('user').then(res => setUser(res.data))
+    // }, [])
 
     const fn=(l)=>{
         let element=''

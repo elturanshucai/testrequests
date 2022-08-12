@@ -21,7 +21,7 @@ class Nav extends Component {
         else {
             buttons = <>
                 <Link to='/user' className="login-btn">Login</Link>
-                <Link to='/login2' className="register-btn">Sign In</Link>
+                <Link to='/register' className="register-btn">Sign In</Link>
             </>
         }
         return (

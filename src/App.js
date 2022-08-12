@@ -13,6 +13,7 @@ import PostReq from './Components/PostReq'
 import GetReq from './Components/GetReq'
 import Profile from './Profile'
 import Protected from './Protected'
+import ActiveLinks from './Components/ActiveLinks'
 
 function App() {
   const [login, setLogin] = useState(false)
@@ -29,6 +30,7 @@ function App() {
     <BrowserRouter>
       <div className='wrapper'>
         <Nav login={login} setLogin={setLogin} />
+        <ActiveLinks/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/login2' element={<Login setLogin={setLogin} />} />

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { useFormik } from 'formik'
 
-function SignIn() {
     const validate = values => {
         const errors= { }
 
@@ -29,20 +28,22 @@ function SignIn() {
 
         return errors
     }
-    const formik = useFormik({
-        initialValues: {
-            firstName: '',
-            lastName: '',
-            email: '',
-            password: '',
-            repassword: ''
-        },
-        validate: validate,
-        onSubmit: values => {
-            alert(JSON.stringify(values, null, 2))
-        }
-    })
-    return (
+    export default ()=>{
+        const formik = useFormik({
+            initialValues: {
+                firstName: '',
+                lastName: '',
+                email: '',
+                password: '',
+                repassword: ''
+            },
+            validate,
+            onSubmit: values => {
+                alert(JSON.stringify(values, null, 2))
+            }
+        })
+
+        return (
         <form onSubmit={formik.handleSubmit}>
             <h3>Sign Up</h3>
 
@@ -80,5 +81,3 @@ function SignIn() {
         </form>
     )
 }
-
-export default SignIn;
